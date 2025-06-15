@@ -20,10 +20,12 @@
 :root {
     font-size: 20px;
 
-    --background-blue: rgb(37, 150, 190);
+    --background-blue: rgb(25, 146, 212);
     --secondary-text-color: rgb(191, 191, 191);
     --search-bar-background-color: rgb(217, 217, 217);
     --sidebar-text-color: white;
+
+    font-family: Roboto, system-ui;
 }
 
 body {
@@ -59,16 +61,6 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-.logo-img {
-    width: 4rem;
-    width: 4rem;
-}
-
-.nav-logos {
-    width: 2rem;
-    height: 2rem;
-}
-
 ul {
     list-style-type: none;
 }
@@ -82,40 +74,81 @@ body {
 .sidebar {
     grid-column: 1;
     grid-row: 1;
+
     background-color: var(--background-blue);
     color: var(--sidebar-text-color);
+
+    display: grid;
+    grid-template-rows: 80px 2fr 3fr;
+    row-gap: 50px;
 }
+
+.logo
+,.sidebar li {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar p {
+    margin-left: 30px;
+}
+
+
 
 .content-body {
     grid-column: 2;
     grid-row: 1;
     display: grid;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 160px 1fr;
+    padding-left: 40px;
 }
 
 .header-bar {
     grid-column: 1/-1;
     grid-row: 1;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 70px 90px;
 }
 
 .search-bar {
-    flex: 1;
+    grid-row: 1;
+    grid-column: 1;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-.post-bar {
-    flex: 2;
+.user-info {
+    grid-row: 1;
+    grid-column: 2;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
+
+.user-info > h3 {
+    display: inline;
+}
+
+.profile-welcome {
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+}
+
 
 .post-actions {
+    grid-row: 2;
+    grid-column: 2;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .post-actions button{
@@ -124,15 +157,8 @@ body {
     border: none;
     border-radius: 20px;
     font-size: 1rem;
-    width: 100px;
-    padding: 5px;
-}
-
-.profile-welcome {
-    display: inline grid;
-    grid-column: 80px 100px;
-    grid-row: 30px 50px;
-    column-gap: 20px;
+    width: 125px;
+    padding: 6px;
 }
 
 .content-section{
@@ -140,12 +166,18 @@ body {
     grid-row: 2/-1;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 350px;
 }
 
 .projects {
     grid-column: 1;
     grid-row: 1/-1;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-rows: repeat(auto-fit, 300px);
 }
 
 .announcements {
@@ -161,6 +193,17 @@ body {
 .icon {
     width: 2rem;
     height: 2rem;
+}
+
+.logo-img {
+    width: 3.5rem;
+    width: 3.5rem;
+}
+
+.projects-title, 
+.announcements-title,
+.trending-title {
+    font-size: 1.3rem;
 }
 
 .search{
