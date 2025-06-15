@@ -8,18 +8,18 @@
 </head>
 <body>
 
-    <div class="header">
+    <div class="sidebar">
         <div class="logo">
             <img class="logo-img" src="sources/owl.svg" alt="The logo, a stylized image of an owl">
             Dashboard
         </div>
         <ul class="nav-options">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+            <li><img class="icon" src="sources/home-circle-outline.svg" alt="Home Icon"> Home</li>
+            <li><img src="sources/card-account-details-outline.svg" alt="An ID icon" class="icon"> Profile</li>
+            <li><img src="sources/chat.svg" alt="Chat icon" class="icon"> Messages</li>
+            <li><img src="sources/book-open-page-variant.svg" alt="Book icon" class="icon"> History</li>
+            <li><img src="sources/list-box.svg" alt="List icon" class="icon"> Tasks</li>
+            <li><img src="sources/account-group.svg" alt="Community icon" class="icon"> Communities</li>
         </ul>
         <ul class="support-options">
             <li>Settings</li>
@@ -33,33 +33,40 @@
         <div class="header-bar">
 
             <div class="search-bar">
-                <form action="">
-                    <img src="sources/magnify.svg" alt="A magnifying glass" class="nav-logos"><input type="text">
-                </form>
+                <img src="sources/magnify.svg" alt="A magnifying glass" class="icon">
+                <input type="text" class="search">
+                <img src="sources/bell-badge.svg" alt="A bell" class="icon">
+                <img src="sources/onion.jpg" alt="User profile picture" class="small-pfp"> 
+                <h3>Isa Malagon</h3>
             </div>
-            <div class="notification"><img src="sources/bell-badge.svg" alt="A bell" class="nav-logos">
-            </div>
-            <div class="profile"></div>
+
 
             <div class="post-bar">
-                <div class="profile-welcome">
 
+                <div class="profile-welcome">
+                    <img class="user-pfp" src="sources/onion.jpg" alt="User profile picture">
+                    <h3 class="hi">Hi there,</h3>
+                    <h2 class="user-name">Isa Malagon (@isa)</h2>
                 </div>
-                <div class="post-actions">
-                    <ul>
-                        <li><button>New</button></li>
-                        <li><button>Upload</button></li>
-                        <li><button>Share</button></li>
-                    </ul>
-                </div>
+
+                <ul class="post-actions">
+                    <li><button>New</button></li>
+                    <li><button>Upload</button></li>
+                    <li><button>Share</button></li>
+                </ul>
+
             </div>
 
         </div>
 
         <div class="content-section">
+
             <div class="projects">
+
                 <h2 class="projects-title">Your Projects</h2>
+
                 <div class="project-cards">
+
                     <div class="card">
                         <h3>Super Cool Project</h3>
                         <p>
@@ -96,11 +103,17 @@
                             Deleniti, eius. Fugit autem consectetur eius facilis qui a quo. Repellat, quaerat, nisi facilis saepe non quis dolore dolores earum cum, iusto praesentium. Vero, a. Veritatis distinctio aut delectus dicta?
                         </p>
                     </div>
+
                 </div>
+
             </div>
+
             <div class="announcements">
+
                 <h2 class="announcements-title">Announcements</h2>
+
                 <div class="announcements-list">
+
                     <ul class="list-of-announcements">
                         <li>
                             <h3>Site Maintenance</h3>
@@ -121,11 +134,16 @@
                             </p>
                         </li>
                     </ul>
+
                 </div>
+
             </div>
+
             <div class="trending">
+
                 <h2 class="trending-title">Trending</h2>
                 <div class="profiles-list">
+
                     <ul>
                         <li>
                             <img class="trending-pfps" src="sources/onion.jpg" alt="An onion-like cat">
@@ -149,7 +167,9 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
+            
         </div>
     </div>
 
